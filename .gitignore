@@ -1,0 +1,9 @@
+.bloop/
+.bsp/
+.metals/
+bin/
+!project/build.properties
+!project/plugins.sbt
+project/
+target/
+build/
