@@ -3,6 +3,7 @@ package aoc2020
 import scala.io.Source
 import scala.util.matching.Regex
 
+/* https://adventofcode.com/2020/day/2 */
 object PasswordFinder extends App {
 
   type Policy = (Int, Int, Char)

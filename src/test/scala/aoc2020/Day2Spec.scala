@@ -31,14 +31,14 @@ class PasswordFinderSpec extends AnyFlatSpec with should.Matchers with GivenWhen
   }
   
   it should "yield a pass result according to spec 2" in {
-    Given("a policy-compliant")
+    Given("a policy-compliant password")
     val policy = (1, 3, 'a')
     val password = "abcde"
     assert(isCompliantV2(password, policy))
   }
 
   it should "yield a fail result according to spec 2 (a)" in {
-    Given("a non-policy-compliant")
+    Given("a non-policy-compliant password")
     val policy = (1, 3, 'b')
     val password = "cdefg"
     assert(!isCompliantV2(password, policy))
